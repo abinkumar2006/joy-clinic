@@ -434,11 +434,34 @@ backdrop-filter:blur(20px);
 z-index:1000;
 
 }
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+text-decoration:none;
+}
 
 .logo img{
-    height:60px;
-    width:auto;
-    object-fit:contain;
+height:80px;
+width:80px;
+object-fit:contain;
+}
+
+.logo-text h2{
+margin:0;
+font-size:42px;
+font-weight:700;
+color:#4b1d78;
+line-height:1;
+}
+
+.logo-text span{
+display:block;
+margin-top:8px;
+font-size:15px;
+font-weight:500;
+letter-spacing:1px;
+color:#b57a16;
 }
 
 .nav-links{
