@@ -95,7 +95,7 @@ window.addEventListener("load", () => {
     Please confirm my appointment.`;
     
     const whatsappURL =
-    `https://wa.me/919360394172?text=${encodeURIComponent(whatsappMessage)}`;
+    `https://wa.me/9360394172?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(
     whatsappURL,
