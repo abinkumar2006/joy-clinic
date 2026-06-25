@@ -59,7 +59,43 @@ if(top < window.innerHeight-100){
 el.classList.add("active");
 
 }
+function bookAppointment(){
 
+let name =
+document.getElementById(
+"patientName"
+).value;
+
+let phone =
+document.getElementById(
+"patientPhone"
+).value;
+
+let reason =
+document.getElementById(
+"patientReason"
+).value;
+
+let text =
+
+`🏥 JOY CLINIC APPOINTMENT
+
+Patient Name: ${name}
+
+Phone Number: ${phone}
+
+Reason:
+${reason}`;
+
+window.open(
+
+`https://wa.me/919360394172?text=${encodeURIComponent(text)}`,
+
+"_blank"
+
+);
+
+}
 });
 
 });
