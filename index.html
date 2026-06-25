@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Clinic</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div id="loader">
+    <h1>🏥 JOY CLINIC</h1>
+</div>
+
+<nav class="navbar">
+    <div class="logo">JOY CLINIC</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button onclick="toggleTheme()">🌙</button>
+</nav>
+
+<section id="home" class="hero">
+    <h1>Care • Compassion • Cure</h1>
+    <p>Quality Healthcare for All Ages</p>
+
+    <a href="#appointment" class="btn">
+        Book Appointment
+    </a>
+</section>
+
+<section class="stats">
+    <div>
+        <h2 class="counter" data-target="5000">0</h2>
+        <p>Patients Served</p>
+    </div>
+
+    <div>
+        <h2 class="counter" data-target="3">0</h2>
+        <p>Free Camps / Year</p>
+    </div>
+
+    <div>
+        <h2 class="counter" data-target="24">0</h2>
+        <p>Support Hours</p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+        <div class="card">Outpatient Care</div>
+        <div class="card">Observation Beds</div>
+        <div class="card">Laboratory</div>
+        <div class="card">ECG</div>
+        <div class="card">Wound Care</div>
+        <div class="card">Home Visit</div>
+        <div class="card">Wheelchair Support</div>
+        <div class="card">Free Medical Camps</div>
+    </div>
+</section>
+
+<section id="appointment">
+    <h2>Book Appointment</h2>
+
+    <input id="name" placeholder="Patient Name">
+    <input id="phone" placeholder="Phone Number">
+    <textarea id="reason"
+    placeholder="Reason for Visit"></textarea>
+
+    <button onclick="bookAppointment()">
+        Book via WhatsApp
+    </button>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>📞 9360394172</p>
+    <p>📞 8870624484</p>
+
+    <p>
+        Kalikovil Street,
+        Near Deen Store,
+        Thangachimadam
+    </p>
+
+    <p>Lab Available: 7:30 AM</p>
+    <p>Doctor: 9:30 AM–2 PM | 5:30 PM–9:30 PM</p>
+</section>
+
+<a href="https://wa.me/919360394172"
+class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
