@@ -95,7 +95,60 @@ window.open(
 
 );
 
+}let slides =
+document.querySelectorAll(
+".testimonial"
+);
+
+let current = 0;
+
+setInterval(()=>{
+
+slides[current]
+.classList.remove(
+"active-slide"
+);
+
+current++;
+
+if(current >= slides.length){
+
+current = 0;
+
 }
+
+slides[current]
+.classList.add(
+"active-slide"
+);
+
+},4000);
+
+window.addEventListener(
+"scroll",
+()=>{
+
+let winScroll =
+document.documentElement
+.scrollTop;
+
+let height =
+
+document.documentElement
+.scrollHeight -
+
+document.documentElement
+.clientHeight;
+
+let scrolled =
+(winScroll/height)*100;
+
+document.getElementById(
+"progressBar"
+).style.width =
+scrolled + "%";
+
+});
 });
 
 });
