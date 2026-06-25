@@ -10,6 +10,7 @@ overflow-x:hidden;
 background:#f5fbff;
 }
 
+
 .loader{
 position:fixed;
 inset:0;
@@ -434,10 +435,10 @@ z-index:1000;
 
 }
 
-.logo{
-font-size:24px;
-font-weight:700;
-color:#2563eb;
+.logo img{
+    height:60px;
+    width:auto;
+    object-fit:contain;
 }
 
 .nav-links{
